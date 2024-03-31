@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Inicio de sesión</title>
+    <style>
+        /* Estilo para los enlaces "Olvidaste tu contraseña" y "Regístrate" */
+        .forgot-password,
+        .register-link {
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin-top: 15px;
+            color: black; /* Cambia el color del texto del enlace */
+
+        }
+     
+
+
+        /* Espacio entre los enlaces */
+        .forgot-password {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+    
+    <div class="login-container">
+        <h2>Iniciar sesión</h2>
+        <form action="">
+            <div class="input-field">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="login-btn">Iniciar sesión</button>
+            <p class="forgot-password">
+                <a href="#">Olvidaste tu contraseña?</a>
+            </p>
+        </form>
+        <p class="register-link">¿No tienes una cuenta? <a href="/signup">Regístrate</a> </p>
+        <p>Al iniciar sesión, aceptas nuestros <a href="/privacy-policy">Términos de servicio</a>.</p>
+    </div>
+
+    <script>
+        // Función para mostrar u ocultar el formulario de inicio de sesión
+        function toggleLoginForm() {
+            var loginForm = document.getElementById('login-form');
+            // Si el formulario está visible, ocúltalo; si está oculto, muéstralo
+            if (loginForm.style.display === 'none') {
+                loginForm.style.display = 'block';
+            } else {
+                loginForm.style.display = 'none';
+            }
+        }
+    </script>
+    </div>
+    <!-- Seccion footer -->
+    <footer>
+        <p>Author: Ricardo Andrés Oyarce Mieville<br>
+        <a href="ricardomieville@gmail.com">ricardomieville@gmail.com</a></p>
+      </footer>
+
+</body>
+</html>
+

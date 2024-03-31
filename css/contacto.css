@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.banner img {
+    width: 5%;
+    height: auto;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #c9c2b9; /* Cambiar el color del texto */
+    background-image: url('/img/fondoapp.png');
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+
+.btn  {
+    width: 100%;
+    padding: 10px;
+    background-color: #941B0C; /* Color de fondo */
+    color: #ffffff; /* Color de texto */
+    border: none;
+    border-radius: 3px;
+    
+}
+
+.btn-primary{
+    width: 100%;
+    padding: 10px;
+    background-color: #941B0C; /* Color de fondo */
+    color: #ffffff; /* Color de texto */
+    border: none;
+    border-radius: 3px;
+    --bs-btn-hover-bg: #198754;
+    
+}

@@ -1,0 +1,119 @@
+/* Estilos generales */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* Cambiar el color del texto */
+    background-image: url('/img/FondoLogin.jpg');
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+/* Contenedor del formulario de inicio de sesión */
+.login-container {
+    width: 300px;
+    padding: 30px;
+    margin: 100px auto;
+    background-color: #ffb826; /* Cambiar el color de fondo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Encabezado del formulario */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #000000; /* Cambiar el color del texto */
+}
+
+/* Campos de entrada */
+.input-field {
+    margin-bottom: 20px;
+}
+
+/* Etiqueta del campo */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000; /* Cambiar el color del texto */
+}
+
+/* Entrada de texto */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #941B0C; /* Cambiar el color del borde */
+    outline: none;
+    color: #941B0C; /* Cambiar el color del texto */
+    background-color: #ffffff; /* Cambiar el color de fondo */
+}
+
+/* Botón de inicio de sesión */
+.login-btn {
+    background-color: #504d4a; /* Cambiar el color de fondo */
+    color: #ffffff; /* Cambiar el color del texto */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo al pasar el mouse sobre el botón */
+.login-btn:hover {
+    background-color: #504d4a; /* Cambiar el color de fondo */
+}
+
+/* Estilo para los enlaces "Olvidaste tu contraseña" y "Regístrate" */
+.forgot-password,
+.register-link {
+    text-align: center;
+    color: #ffffff; /* Cambiar el color del texto */
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+}
+
+/* Espacio entre los enlaces */
+.forgot-password {
+    margin-bottom: 10px;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #621708; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px;
+}
+
+
+/* Estilo para los enlaces */
+.a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: black; /* Cambia el color del texto del enlace */
+
+}
+
+
+.btn  {
+    width: 100%;
+    padding: 10px;
+    background-color: #941B0C; /* Color de fondo */
+    color: #ffffff; /* Color de texto */
+    border: none;
+    border-radius: 3px;
+    
+}
+
+.btn-primary{
+    width: 100%;
+    padding: 10px;
+    background-color: #941B0C; /* Color de fondo */
+    color: #ffffff; /* Color de texto */
+    border: none;
+    border-radius: 3px;
+    --bs-btn-hover-bg: #198754;
+    
+}

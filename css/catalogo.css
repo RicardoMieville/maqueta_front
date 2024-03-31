@@ -1,0 +1,142 @@
+/* Paleta de colores */
+:root {
+    --color-primario: #220901; /* Color principal */
+    --color-segundo: #621708;
+    --color-tercero: #941B0C;
+    --color-cuarto: #BC3908;
+    --color-quinto: #F6AA1C;
+    --color-sexto: #ffffff;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    padding: 30px;
+    color: var(--color-cuarto); /* Color de texto */
+    background-image: url('/img/FondoCatalogo.jpg');
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: var(--color-segundo); /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px;
+}
+
+/* Estilos para las secciones */
+.seccion {
+    margin-bottom: 50px;
+    
+}
+
+h2 {
+    border-bottom: 2px solid var(--color-sexto); /* Línea de borde inferior */
+    padding-bottom: 10px;
+}
+
+/* Estilos para los productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row; /* Asegura que los elementos se muestren en fila */
+}
+
+
+.producto {
+    width: calc(33.33% - 20px); /* Tamaño del producto (1/3 del ancho menos el espacio entre ellos) */
+    margin-bottom: 20px;
+    border: 2px solid var(--color-cuarto); /* Borde sólido */
+    padding: 10px;
+    text-align: center;
+    background-color: #fff; /* Color de fondo */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+     flex-direction: row; /* Asegura que los elementos se muestren en fila */
+         display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alinea los productos hacia el inicio (hacia la izquierda) */
+    gap: 20px; /* Espacio entre los productos */
+}
+
+.producto:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al hacer hover */
+}
+
+.producto img {
+    width: 100px; /* Tamaño de la imagen */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.producto:hover img {
+    transform: scale(1.1); /* Efecto de zoom al hacer hover */
+}
+
+.descripcion {
+    padding: 20px;
+}
+
+/* Estilos para el botón */
+button {
+    background-color: var(--color-cuarto); /* Color de fondo */
+    color: #fff; /* Color de texto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+    background-color: var(--color-tercero); /* Cambio de color al hacer hover */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    /* Define estilos para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+    .producto {
+        width: calc(50% - 20px); /* Cambia el tamaño del producto para que sean 2 por fila */
+    }
+}
+
+/* Estilos para los enlaces dentro de los productos */
+.producto a:link,
+.producto a:visited {
+    color: #000; /* Cambia el color del enlace a negro */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Estilo para los enlaces */
+.a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: black; /* Cambia el color del texto del enlace */
+
+}
+
+.btn  {
+    width: 100%;
+    padding: 10px;
+    background-color: #941B0C; /* Color de fondo */
+    color: #ffffff; /* Color de texto */
+    border: none;
+    border-radius: 3px;
+    
+}
+
+.btn-primary{
+    width: 100%;
+    padding: 10px;
+    background-color: #941B0C; /* Color de fondo */
+    color: #ffffff; /* Color de texto */
+    border: none;
+    border-radius: 3px;
+    --bs-btn-hover-bg: #198754;
+    
+}
+
+

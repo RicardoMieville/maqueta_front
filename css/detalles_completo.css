@@ -1,0 +1,92 @@
+/* Estilos para el catálogo */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #c9c2b9; /* Cambiar el color del texto */
+    background-image: url('/img/FondoDetalles.jpg');
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+}
+.producto {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    margin-bottom: 20px;
+    border: 2px solid #220901; /* Utilizamos el color café para el borde */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.producto:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.imagen {
+    flex: 0 0 200px; /* Ancho fijo para la imagen */
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #220901; /* Borde café en la parte inferior de la imagen */
+}
+
+.contenido {
+    padding: 20px;
+    background-color: #BC3908; /* Fondo de color café */
+    color: #fff; /* Texto blanco */
+}
+
+.contenido h3 {
+    margin-top: 0;
+    color: #fff; /* Título en texto blanco */
+}
+
+.contenido p {
+    margin-bottom: 10px;
+    color: #fff; /* Texto en blanco */
+}
+
+.btn-agregar {
+    padding: 10px 20px;
+    background-color: #941B0C; /* Color más oscuro de café para el botón */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+    background-color: #BC3908; /* Al pasar el mouse, el botón se vuelve más claro */
+}
+
+.btn  {
+    width: 100%;
+    padding: 10px;
+    background-color: #941B0C; /* Color de fondo */
+    color: #ffffff; /* Color de texto */
+    border: none;
+    border-radius: 3px;
+    
+}
+
+.btn-primary{
+    width: 100%;
+    padding: 10px;
+    background-color: #941B0C; /* Color de fondo */
+    color: #ffffff; /* Color de texto */
+    border: none;
+    border-radius: 3px;
+    --bs-btn-hover-bg: #198754;
+    
+}
+
+
+

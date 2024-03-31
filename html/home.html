@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/home.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-iGkdtoYFuVYe9PQfnlEOu3L/ZBEvHQzj6Nk2MpUCtmJz+PmGSQY37H6ZBOKMT5Gjp8L6jZ7b4/eD8c+MCyT9Zg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>La Ruta del Sazón</title>
+</head>
+
+    <title>La Ruta del Sazón</title>
+</head>
+<style>
+    /* Agregamos estilos personalizados aquí */
+
+    /* Para el fondo rojo en fondos pequeños */
+    @media (max-width: 768px) {
+        .navbar {
+            background-color: #941B0C;
+        }
+    }
+
+    /* Define el estilo para los enlaces (hipervínculos) */
+    a {
+        color: white; /* Cambia el color del texto a blanco */
+        text-decoration: none; /* Elimina la subrayado predeterminado */
+    }
+
+    /* Estilo personalizado para el footer */
+    footer {
+        text-align: center;
+        padding: 3px;
+        background-color: #941B0C;
+        color: white;
+
+    }
+</style>
+<body>
+    <!-- Seccion Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../html/home.html">La Ruta del Sazón</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hacelo tú mismo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Seguimiento de pedido</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav ms-auto me-3">
+                    <a class="nav-link" href="#">
+                        Carrito <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a class="nav-link" href="/html/login.html">Iniciar sesión</a>
+                </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar comida" aria-label="Buscar comida">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Contenido principal de la página -->
+
+
+    <!-- Sección de Platos Destacados -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Destacados</h2>
+        <div class="row">
+            <!-- Aquí puedes colocar tarjetas de platos destacados -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../img/completoitalianopro.png.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Completo Italiano</h5>
+                        <p class="card-text">Pan de casa, con verduras frescas vianesa premium y mayonesa casera.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../img/papasfritas.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Papas Fritas</h5>
+                        <p class="card-text">Papas Fritas Extra Grandes para 2 Personas (Fritas en Aceite o Freidora de Aire).</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../img/chorrillana pro.png.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chorrillana Familiar</h5>
+                        <p class="card-text">Base de Papas Fritas, Vacuno, Pollo, Cebolla Frita, Salchichas, Queso y Huevo.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Sección Carousel -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Aquí puedes agregar imágenes del menú o promociones -->
+                <div class="swiper-slide">
+                    <img src="/img/sandwich pollo italiano con papas fritas.png.jpg" class="d-block" alt="...">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/aros de cebolla.png.jpg" class="d-block" alt="...">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/churrasco italiano con papas.png.jpg" class="d-block" alt="...">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/sopaipillas.png.jpg" class="d-block" alt="...">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/sandwich mechada italiana.png.jpg" class="d-block" alt="...">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/sandwich churrasco italiano.png.jpg" class="d-block" alt="...">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/pollo a la plancha con queso.png.jpg" class="d-block" alt="...">
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+    <!-- Sección de Cómo Funciona -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">¿Cómo Funciona?</h2>
+        <div class="row">
+            <!-- Aquí puedes incluir una explicación de cómo funciona el proceso de pedido -->
+            <div class="col-md-4">
+                <h3>Paso 1</h3>
+                <p>Selecciona tus alimentos preferidos de nuestro Catálogo.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Paso 2</h3>
+                <p>Personaliza tu pedido según tus preferencias y selecciona el metodo de pago que deseas.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Paso 3</h3>
+                <p>Realiza el seguimiento de tu pedido en tiempo real.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Contacto -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <form class="row g-3">
+           
+
+
+      <!-- Seccion footer -->
+      <footer>
+        <p>Author: Ricardo Andrés Oyarce Mieville<br>
+        <a href="ricardomieville@gmail.com">ricardomieville@gmail.com</a></p>
+      </footer>
+
+      <!-- Seccion Scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 3000, // Tiempo en milisegundos entre cada slide
+                disableOnInteraction: false, // Autoplay no se detiene al interactuar con el carrusel
+            },
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+          },
+        });
+    
+      </script>
+</body>
+</html>

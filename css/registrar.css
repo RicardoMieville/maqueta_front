@@ -1,0 +1,26 @@
+
+
+
+
+
+
+.btn  {
+    width: 100%;
+    padding: 10px;
+    background-color: #941B0C; /* Color de fondo */
+    color: #ffffff; /* Color de texto */
+    border: none;
+    border-radius: 3px;
+    
+}
+
+.btn-primary{
+    width: 100%;
+    padding: 10px;
+    background-color: #941B0C; /* Color de fondo */
+    color: #ffffff; /* Color de texto */
+    border: none;
+    border-radius: 3px;
+    --bs-btn-hover-bg: #198754;
+    
+}
